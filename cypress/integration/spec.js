@@ -1,5 +1,4 @@
 it('does not work', () => {
-  cy.visit('index.html')
-  cy.get('[data-test=newsletter-signup-checkbox-BUNW_NL]').shadow().find('input').should('be.checked')
-
+  cy.visit('https://news.bloomberglaw.com/interactive/banking-on-bankruptcy')
+  cy.get('banking-on-bankruptcy').shadow().find('.app').contains('Roy Strom')
 })
